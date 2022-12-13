@@ -1,15 +1,7 @@
-/* mat-grid-tile{
-    padding: 5px;
-    background: lightblue!important;
-} */
-
 ::ng-deep .mat-sidenav-backdrop.mat-sidenav-shown {
     background-color: transparent;
 }
 
-.project-detail{
-    /* margin: 10px; */
-}
 ul {
     list-style: none;
     padding-inline-start: 0;
