@@ -1,0 +1,50 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary" class="mat-toolbar header">
+  
+  <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+  </button>
+
+  <span>Portfolio</span>
+
+  <span class="fill-space"></span>  
+  <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button routerLink="/about">About me</a>
+      <a mat-button routerLink="/projects">Projects</a>
+      <a mat-button routerLink="/contact">Contact</a>   
+    </div>
+  <span class="fill-space"></span>
+  <div>Sjoerd Brattinga</div>
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <!-- Sidenav -->
+  <mat-sidenav color="primary" 
+    #sidenav 
+    [mode]="isBiggerScreen() ? 'over' : 'side'" 
+    [(opened)]="opened"
+    [fixedBottomGap]>    
+
+    <mat-nav-list>
+      <div class="profile-image-container">
+        <img src="../assets/sjoerd.png" class="profile-image">  
+      </div>     
+      <a routerLink='/about' mat-list-item>
+        <mat-icon>person</mat-icon> About Me     
+      </a>
+      <a routerLink='/projects' mat-list-item>
+        <mat-icon>dashboard</mat-icon> Projects
+      </a>
+      <a routerLink='/contact' mat-list-item>
+        <mat-icon>email</mat-icon> Contact Me
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

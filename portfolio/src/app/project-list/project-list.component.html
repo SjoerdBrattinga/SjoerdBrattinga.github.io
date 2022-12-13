@@ -1,0 +1,19 @@
+<section class="mat-typography title-group">
+    <span class="fill-space"></span>
+    <h1>Projects</h1>
+    <mat-divider></mat-divider>
+</section>  
+
+ <section class="project-dashboard">
+    <ul>
+        <li *ngFor="let project of projects">
+            <app-project-detail [project]="project"></app-project-detail>
+        </li>
+    </ul> 
+
+    <!-- <mat-grid-list [cols]="breakpoint" rowHeight="200px" (window:resize)="onResize($event)">
+        <mat-grid-tile *ngFor="let project of projects">
+            <app-project-detail [project]="project"></app-project-detail>
+        </mat-grid-tile>        
+    </mat-grid-list> -->
+</section>
