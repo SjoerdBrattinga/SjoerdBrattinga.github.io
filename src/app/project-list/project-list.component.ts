@@ -15,14 +15,14 @@ export class ProjectListComponent implements OnInit {
     {
       name: 'Checkers',
       frameworks: ['Android Studio', 'Java'],
-      description: 'Checkers game for Android.',
+      description: 'For a school assignment I\'m working on a checkers game for Andoid.',
       url: 'https://github.com/SjoerdBrattinga/CheckersMobile'
     }, 
     {
       name: 'Portfolio Website',
       frameworks: ['TypeScript', 'Angular', 'Angular-Material'],
-      description: 'I had the assignment to create a portfolio website. I have used the Angular framework to accomplish this. You are looking at the result! To view the code check the GitHub link below.',
-      url: 'https://github.com/SjoerdBrattinga/Portfolio'
+      description: 'You are looking at the result! To view the code check the GitHub link below.',
+      url: 'https://github.com/SjoerdBrattinga/SjoerdBrattinga.github.io'
     },
     {
       name: 'Boggle',
